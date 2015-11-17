@@ -1,7 +1,8 @@
-FROM node:4.1.0
+FROM node:4.2.2
 
 RUN npm upgrade -g npm
-RUN npm install -g gulp bower
+RUN npm install -g gulp
+RUN npm install -g bower
 
 RUN git config --global url."https://".insteadOf git://
 
